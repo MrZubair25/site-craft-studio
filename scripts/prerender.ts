@@ -12,6 +12,15 @@ function resolveSiteUrl(): string {
   if (raw && /^https?:\/\//i.test(raw) && !raw.includes('MY_APP_URL')) {
     return raw.replace(/\/+$/, '');
   }
+  const vercelHost =
+    process.env.VERCEL_PROJECT_PRODUCTION_URL?.trim() ||
+    process.env.VERCEL_URL?.trim();
+  if (vercelHost) {
+    const withProto = /^https?:\/\//i.test(vercelHost)
+      ? vercelHost
+      : `https://${vercelHost}`;
+    return withProto.replace(/\/+$/, '');
+  }
   return '';
 }
 
