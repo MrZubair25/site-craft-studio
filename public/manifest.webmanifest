@@ -1,0 +1,16 @@
+{
+  "name": "Site Craft Studio — Zubair Akram",
+  "short_name": "Site Craft",
+  "description": "Framer website design & conversion studio founded by Zubair Akram.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#07131F",
+  "theme_color": "#0B3A5B",
+  "icons": [
+    {
+      "src": "/src/assets/site-craft-logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

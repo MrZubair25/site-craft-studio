@@ -1,0 +1,131 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --bg: #F6F9FB;
+  --surface: #FFFFFF;
+  --surface-muted: #EEF4F8;
+  --border: rgba(11, 58, 91, 0.11);
+  --text: #0B1620;
+  --text-muted: #4B5E6F;
+  --navy: #0B3A5B;
+  --deep-navy: #07131F;
+  --accent: #3CC4D6;
+  --accent-soft: #7FE3EE;
+}
+
+.dark {
+  --bg: #07131F;
+  --surface: #0D1E2E;
+  --surface-muted: #11263A;
+  --border: rgba(127, 227, 238, 0.13);
+  --text: #EAF2F7;
+  --text-muted: #93AABF;
+}
+
+@layer base {
+  html {
+    font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+    scroll-behavior: smooth;
+    background-color: var(--bg);
+    color: var(--text);
+  }
+
+  body {
+    overflow-x: clip;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    letter-spacing: -0.025em;
+  }
+
+  .font-mono-num {
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Subtle architectural grain texture */
+.bg-grain {
+  background-image: radial-gradient(rgba(11, 58, 91, 0.055) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.dark .bg-grain {
+  background-image: radial-gradient(rgba(127, 227, 238, 0.045) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Infinite marquee animation */
+@keyframes marquee-scroll {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 28s linear infinite;
+}
+
+.marquee-wrapper:hover .animate-marquee {
+  animation-play-state: paused;
+}
+
+/* Circular View Transition for Theme Switch */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+::view-transition-new(root) {
+  z-index: 9999;
+}
+
+/* Outlined display wordmark fill on hover in Footer */
+.footer-wordmark {
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(11, 58, 91, 0.24);
+  transition: color 0.55s cubic-bezier(0.16, 1, 0.3, 1), -webkit-text-stroke-color 0.55s ease;
+}
+
+.dark .footer-wordmark {
+  -webkit-text-stroke: 1.5px rgba(127, 227, 238, 0.22);
+}
+
+.footer-wordmark:hover {
+  color: #0B3A5B;
+  -webkit-text-stroke-color: #3CC4D6;
+}
+
+.dark .footer-wordmark:hover {
+  color: #3CC4D6;
+  -webkit-text-stroke-color: #7FE3EE;
+}
+
+/* Ripple animation */
+@keyframes scs-ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+.animate-ripple {
+  animation: scs-ripple 0.65s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-marquee {
+    animation: none;
+  }
+}

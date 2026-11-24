@@ -1,0 +1,200 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [6 0 R 8 0 R 10 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Length 5588 >>
+stream
+0.043 0.227 0.357 rg 0 700 612 92 re f
+0.235 0.769 0.839 rg 0 696 612 4 re f
+BT /F2 20 Tf 1 1 1 rg 52 752 Td (Site Craft Studio - Framer Conversion Guide) Tj ET
+BT /F1 10.5 Tf 0.498 0.890 0.933 rg 52 732 Td (Complete Blueprint: Converting Zubair Akram Portfolio to Native Framer) Tj ET
+BT /F1 8.5 Tf 0.85 0.92 0.96 rg 52 714 Td (Design System  |  Stacks & Grids  |  Motion Effects  |  CMS  |  Code Overrides  |  SEO) Tj ET
+0.235 0.769 0.839 rg 52 668 6 12 re f
+BT /F2 13 Tf 0.043 0.227 0.357 rg 64 670 Td (1. Design System Setup \(Styles & Tokens\)) Tj ET
+BT /F1 10 Tf 0.294 0.369 0.435 rg 52 650 Td (Before drawing frames in Framer, configure Assets -> Styles so Light and Dark modes stay) Tj ET
+BT /F1 10 Tf 0.294 0.369 0.435 rg 52 636 Td (synchronized across all breakpoints.) Tj ET
+0.235 0.769 0.839 rg 56 621 3.5 3.5 re f
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 618 Td (Color Styles \(Light / Dark pairs\): Background \(#F6F9FB / #07131F\), Surface \(#FFFFFF) Tj ET
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 604.5 Td (/ #0D1E2E\), Surface Muted \(#EEF4F8 / #11263A\), Text Primary \(#0B1620 / #EAF2F7\),) Tj ET
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 591.0 Td (Text Muted \(#4B5E6F / #93AABF\), Primary Navy \(#0B3A5B\), Accent Teal \(#3CC4D6\), Soft) Tj ET
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 577.5 Td (Teal \(#7FE3EE\).) Tj ET
+0.235 0.769 0.839 rg 56 564.0 3.5 3.5 re f
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 561.0 Td (Text Styles: Load Plus Jakarta Sans \(Headings\), DM Sans \(Body\), and JetBrains Mono) Tj ET
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 547.5 Td (\(Numbers & Metrics\). Configure responsive sizing on Desktop \(1200+\), Tablet \(810\),) Tj ET
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 534.0 Td (and Mobile \(390\).) Tj ET
+0.235 0.769 0.839 rg 56 520.5 3.5 3.5 re f
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 517.5 Td (Breakpoints: Desktop 1440px \(1152px max-width container\), Tablet 810px, Phone 390px.) Tj ET
+0.235 0.769 0.839 rg 52 493.0 6 12 re f
+BT /F2 13 Tf 0.043 0.227 0.357 rg 64 495.0 Td (2. Layout Architecture \(Stacks & Grids\)) Tj ET
+BT /F1 10 Tf 0.294 0.369 0.435 rg 52 475.0 Td (Every React section translates cleanly into native Framer Stacks and Grids:) Tj ET
+0.235 0.769 0.839 rg 56 460.0 3.5 3.5 re f
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 457.0 Td (Page Root: Vertical Stack \(Gap: 0, Width: 1fr\). Wrap sections in centered containers) Tj ET
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 443.5 Td (\(Max Width: 1152px, Padding: 24px desktop / 16px mobile\).) Tj ET
+0.235 0.769 0.839 rg 56 430.0 3.5 3.5 re f
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 427.0 Td (Hero Section: Horizontal Stack \(2 columns on Desktop -> Vertical Stack on) Tj ET
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 413.5 Td (Tablet/Mobile\). Left column holds availability badge, H1, subheadline, and CTA row) Tj ET
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 400.0 Td (\(Wrap: Yes\). Right column uses an arched Frame \(Radius: 200px 200px 28px 28px\) with) Tj ET
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 386.5 Td (a blurred teal glow layer behind it and absolute floating metric chips \(hidden on) Tj ET
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 373.0 Td (Mobile\).) Tj ET
+0.235 0.769 0.839 rg 56 359.5 3.5 3.5 re f
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 356.5 Td (Selected Work Bento Grid: Framer 12-column Grid on Desktop \(2 columns Tablet, 1) Tj ET
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 343.0 Td (column Mobile\). Featured cards span 7 columns; standard cards span 5 columns) Tj ET
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 329.5 Td (\(Radius: 24px\).) Tj ET
+0.235 0.769 0.839 rg 56 316.0 3.5 3.5 re f
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 313.0 Td (Services Grid: 3 columns on Desktop, 2 on Tablet, 1 on Mobile.) Tj ET
+0.235 0.769 0.839 rg 56 299.5 3.5 3.5 re f
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 296.5 Td (Process Timeline: Vertical Stack with an absolute 2px vertical line pinned to the) Tj ET
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 283.0 Td (left edge.) Tj ET
+0.235 0.769 0.839 rg 52 258.5 6 12 re f
+BT /F2 13 Tf 0.043 0.227 0.357 rg 64 260.5 Td (3. Native Framer Animations & Interactions) Tj ET
+BT /F1 10 Tf 0.294 0.369 0.435 rg 52 240.5 Td (Recreate the motion design using Framer built-in Effects and Component Variants:) Tj ET
+0.235 0.769 0.839 rg 56 225.5 3.5 3.5 re f
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 222.5 Td (Navbar Scroll Behavior: Set floating pill Navbar to Position: Fixed \(Top: 16px,) Tj ET
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 209.0 Td (Backdrop Blur: 16px\). Switch between Default, Compact, and Hidden variants on) Tj ET
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 195.5 Td (scroll.) Tj ET
+0.235 0.769 0.839 rg 56 182.0 3.5 3.5 re f
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 179.0 Td (Hero Word Reveal: Wrap headline words in Overflow: Hidden frames and apply Appear) Tj ET
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 165.5 Td (Effects \(Y: +40px -> 0, Opacity: 0 -> 1, staggered 0.04s per word\).) Tj ET
+0.235 0.769 0.839 rg 56 152.0 3.5 3.5 re f
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 149.0 Td (Floating Portrait & Chips: Apply a Loop Effect \(Y: -8px -> 0, Mirror, 4s-6s, Ease In) Tj ET
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 135.5 Td (Out\) plus Scroll Transform parallax.) Tj ET
+0.235 0.769 0.839 rg 56 122.0 3.5 3.5 re f
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 119.0 Td (Infinite Tool Marquee: Insert Framer built-in Ticker component and enable Pause on) Tj ET
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 105.5 Td (Hover.) Tj ET
+0.85 0.89 0.92 rg 52 40 508 0.7 re f
+BT /F1 8.5 Tf 0.45 0.52 0.58 rg 52 26 Td (Site Craft Studio  |  Zubair Akram) Tj ET
+BT /F1 8.5 Tf 0.45 0.52 0.58 rg 512 26 Td (Page 1 of 3) Tj ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Length 5827 >>
+stream
+0.043 0.227 0.357 rg 52 752 508 1 re f
+BT /F2 9 Tf 0.043 0.227 0.357 rg 52 760 Td (SITE CRAFT STUDIO  -  FRAMER CONVERSION GUIDE) Tj ET
+0.235 0.769 0.839 rg 56 731 3.5 3.5 re f
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 728 Td (3D Hover & Card Zoom: Create Default and Hover variants on ProjectCard \(scale mockup) Tj ET
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 714.5 Td (to 1.04, highlight border #3CC4D6\). Pair with a Code Override for 3D mouse tilt and) Tj ET
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 701.0 Td (spotlight glow.) Tj ET
+0.235 0.769 0.839 rg 56 687.5 3.5 3.5 re f
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 684.5 Td (Scroll-Driven Progress Bars: Apply Scroll Transform \(Scale X: 0 -> 1 for top bar;) Tj ET
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 671.0 Td (Scale Y: 0 -> 1 for Process timeline line\).) Tj ET
+0.235 0.769 0.839 rg 56 657.5 3.5 3.5 re f
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 654.5 Td (Interactive Sections: Service Cards \(Collapsed/Expanded variants on hover/tap\),) Tj ET
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 641.0 Td (Pricing Switcher \(4 variants: Project/Monthly x USD/PKR with Magic Motion\), FAQ) Tj ET
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 627.5 Td (Accordion \(Closed/Open variants\), and Testimonials \(native Framer Carousel with drag) Tj ET
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 614.0 Td (+ auto-play + pause on hover\).) Tj ET
+0.235 0.769 0.839 rg 52 589.5 6 12 re f
+BT /F2 13 Tf 0.043 0.227 0.357 rg 64 591.5 Td (4. Framer CMS Collections) Tj ET
+BT /F1 10 Tf 0.294 0.369 0.435 rg 52 571.5 Td (Migrate src/data/constants.ts into Framer CMS so content updates require zero layout) Tj ET
+BT /F1 10 Tf 0.294 0.369 0.435 rg 52 557.5 Td (edits:) Tj ET
+0.235 0.769 0.839 rg 56 542.5 3.5 3.5 re f
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 539.5 Td (Create a Projects collection with fields: Title, Slug, Category \(SaaS, Agency,) Tj ET
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 526.0 Td (E-commerce, Portfolio, Landing Page\), Year, Metric, Featured \(Toggle\), Mockup Image,) Tj ET
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 512.5 Td (Gallery, Overview, Challenge, Solution, Results, Tools, Live URL.) Tj ET
+0.235 0.769 0.839 rg 56 499.0 3.5 3.5 re f
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 496.0 Td (Bind the Selected Work grid to the Projects collection and link each card either to) Tj ET
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 482.5 Td (a /work/:slug CMS detail page or a Framer Overlay modal.) Tj ET
+0.235 0.769 0.839 rg 56 469.0 3.5 3.5 re f
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 466.0 Td (For category filter tabs, use multi-variant filtered CMS lists or a lightweight) Tj ET
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 452.5 Td (React CMS filter component.) Tj ET
+0.235 0.769 0.839 rg 52 428.0 6 12 re f
+BT /F2 13 Tf 0.043 0.227 0.357 rg 64 430.0 Td (5. Custom Code Components & Overrides) Tj ET
+BT /F1 10 Tf 0.294 0.369 0.435 rg 52 410.0 Td (Because Framer runs on React and Framer Motion, copy custom interactive logic directly) Tj ET
+BT /F1 10 Tf 0.294 0.369 0.435 rg 52 396.0 Td (into Assets -> Code:) Tj ET
+0.235 0.769 0.839 rg 56 381.0 3.5 3.5 re f
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 378.0 Td (Code Components \(Assets -> Code -> Component\): Page Loader \(split-curtain intro\),) Tj ET
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 364.5 Td (Theme Toggle \(circular View Transition reveal\), Custom Desktop Cursor, Command) Tj ET
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 351.0 Td (Palette \(Ctrl/Cmd + K\), Count-Up Stats, and SVG Skill Progress Rings \(expose props) Tj ET
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 337.5 Td (via addPropertyControls\).) Tj ET
+0.235 0.769 0.839 rg 56 324.0 3.5 3.5 re f
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 321.0 Td (Code Overrides \(Assets -> Code -> Override\): Magnetic Button pull + click ripple, 3D) Tj ET
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 307.5 Td (Card Tilt + mouse spotlight glow, Navbar scroll direction hide/show, and Logo/Form) Tj ET
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 294.0 Td (Confetti trigger.) Tj ET
+0.235 0.769 0.839 rg 52 269.5 6 12 re f
+BT /F2 13 Tf 0.043 0.227 0.357 rg 64 271.5 Td (6. Forms, Booking, SEO & Launch Checklist) Tj ET
+0.235 0.769 0.839 rg 56 254.5 3.5 3.5 re f
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 251.5 Td (Contact Form: Use Framer Form Builder \(Name, Email, Budget, Project Type, Message\)) Tj ET
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 238.0 Td (connected to Email, Webhook, Notion, or HubSpot.) Tj ET
+0.235 0.769 0.839 rg 56 224.5 3.5 3.5 re f
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 221.5 Td (Discovery Call Scheduler: Embed Calendly or Cal.com inside the Book a Free Call tab.) Tj ET
+0.235 0.769 0.839 rg 56 208.0 3.5 3.5 re f
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 205.0 Td (WhatsApp Floating Action: Position: Fixed button \(Bottom: 20px, Right: 20px\) linking) Tj ET
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 191.5 Td (to wa.me/923001234567.) Tj ET
+0.235 0.769 0.839 rg 56 178.0 3.5 3.5 re f
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 175.0 Td (SEO & Favicon: In Site Settings -> General, set Title \("Zubair Akram | Framer) Tj ET
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 161.5 Td (Website Designer | Site Craft Studio"\), upload site-craft-logo.svg as Favicon, add) Tj ET
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 148.0 Td (Open Graph preview image, and paste JSON-LD schema into Custom Code -> Start of) Tj ET
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 134.5 Td (<head>.) Tj ET
+0.235 0.769 0.839 rg 52 110.0 6 12 re f
+BT /F2 13 Tf 0.043 0.227 0.357 rg 64 112.0 Td (7. Recommended Framer Build Order) Tj ET
+0.235 0.769 0.839 rg 56 95.0 3.5 3.5 re f
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 92.0 Td (Step 1: Configure Color Styles \(Light/Dark\), Text Styles, and 3 Breakpoints.) Tj ET
+0.85 0.89 0.92 rg 52 40 508 0.7 re f
+BT /F1 8.5 Tf 0.45 0.52 0.58 rg 52 26 Td (Site Craft Studio  |  Zubair Akram) Tj ET
+BT /F1 8.5 Tf 0.45 0.52 0.58 rg 512 26 Td (Page 2 of 3) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Length 1660 >>
+stream
+0.043 0.227 0.357 rg 52 752 508 1 re f
+BT /F2 9 Tf 0.043 0.227 0.357 rg 52 760 Td (SITE CRAFT STUDIO  -  FRAMER CONVERSION GUIDE) Tj ET
+0.235 0.769 0.839 rg 56 731 3.5 3.5 re f
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 728 Td (Step 2: Build reusable Navbar and Footer components.) Tj ET
+0.235 0.769 0.839 rg 56 714.5 3.5 3.5 re f
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 711.5 Td (Step 3: Assemble Hero, Services, Why Framer, Process, About, Pricing, FAQ, and) Tj ET
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 698.0 Td (Contact sections using Stacks.) Tj ET
+0.235 0.769 0.839 rg 56 684.5 3.5 3.5 re f
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 681.5 Td (Step 4: Set up Projects CMS, Selected Work bento grid, and Case Study Overlay/Detail) Tj ET
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 668.0 Td (page.) Tj ET
+0.235 0.769 0.839 rg 56 654.5 3.5 3.5 re f
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 651.5 Td (Step 5: Add native Framer effects \(Appear, Scroll Transform, Ticker, Carousel\).) Tj ET
+0.235 0.769 0.839 rg 56 638.0 3.5 3.5 re f
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 635.0 Td (Step 6: Layer in Code Components & Overrides \(Loader, Cursor, Cmd+K, Magnetic/Tilt,) Tj ET
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 621.5 Td (Confetti\).) Tj ET
+0.235 0.769 0.839 rg 56 608.0 3.5 3.5 re f
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 605.0 Td (Step 7: QA all 3 breakpoints, verify WCAG AA contrast in Light & Dark modes, test) Tj ET
+BT /F1 9.8 Tf 0.043 0.086 0.125 rg 66 591.5 Td (SEO tags, and Publish.) Tj ET
+0.85 0.89 0.92 rg 52 40 508 0.7 re f
+BT /F1 8.5 Tf 0.45 0.52 0.58 rg 52 26 Td (Site Craft Studio  |  Zubair Akram) Tj ET
+BT /F1 8.5 Tf 0.45 0.52 0.58 rg 512 26 Td (Page 3 of 3) Tj ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 9 0 R >>
+endobj
+xref
+0 11
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000134 00000 n 
+0000000204 00000 n 
+0000000279 00000 n 
+0000005919 00000 n 
+0000006055 00000 n 
+0000011934 00000 n 
+0000012070 00000 n 
+0000013782 00000 n 
+trailer
+<< /Size 11 /Root 1 0 R >>
+startxref
+13919
+%%EOF
