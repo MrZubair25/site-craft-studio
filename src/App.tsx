@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
 import { motion, useScroll, useSpring } from 'motion/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { BRAND } from './data/constants';
 import { Loader } from './components/Loader';
 import { Navbar } from './components/Navbar';
@@ -183,6 +184,8 @@ export default function App() {
       <FloatingContactWidget onCustomerAction={() => jumpToContact('brief')} />
 
       <ToastContainer toasts={toasts} onDismiss={dismissToast} />
+
+      <SpeedInsights />
     </div>
   );
 }
